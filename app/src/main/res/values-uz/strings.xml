@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mobil USSD UZB</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="mapbox_access_token">pk.eyJ1IjoibXVoYW1tYWRxb2RpciIsImEiOiJjazNmMXdoZXgwMGFlM210NmVmODAwZ3dxIn0.zv6J57Cgk6YDEZTBGO-Jaw</string>
+    <string name="title_activity_map">Map</string>
+
+
+    <string name="notification">Xabarlar</string>
+    <string name="nav_operatorga_qongiroq">Operatorga qo\'ng\'iroq</string>
+    <string name="nav_darturchi_bilan_boglanish">Dasturchi bilan bog\'lanish</string>
+    <string name="nav_tilni_ozgartirish">Tilni o\'zgartirish</string>
+    <string name="nav_ulashish">Ulashish</string>
+    <string name="nav_baxolash">Baxolash</string>
+    <string name="inter">Internet paketlar</string>
+    <string name="tarif">Tariflar</string>
+    <string name="smstoplam">SMS to\'plamlar</string>
+    <string name="daqiqatoplamlar">Daqiqa to\'plamlar</string>
+    <string name="foydali">Foydali</string>
+    <string name="xizmatlar">Xizmatlar</string>
+    <string name="balans">Balans</string>
+    <string name="trafik">Trafik</string>
+    <string name="ucellslogan">Xayotni yaxshilik sari o\'zgartirib!</string>
+    <string name="beelineslogan">Etakchi. Ishonchli. Innovatsion.</string>
+    <string name="mobislogan">Raqamli imkoniyatlar sari!</string>
+    <string name="perfectslogan">Perfectum! Bugun! Abadiy!</string>
+    <string name="uzmobileslogan">Ishonchli aloqa mobil operatori</string>
+
+    <string name="yangiliklar">Yangiliklar</string>
+    <string name="dasturhaqida">Dastur xaqida</string>
+    <string name="batafsil">Batafsil</string>
+    <string name="activlashtirish">Aktivlashtirish</string>
+    <string name="shartlar">Foydalanish shartlari</string>
+</resources>

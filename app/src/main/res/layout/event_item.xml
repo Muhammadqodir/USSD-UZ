@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:weightSum="8"
+    android:id="@+id/LessonTypeBg"
+    android:gravity="center_vertical"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="18dp"
+        android:layout_margin="12dp"
+        android:id="@+id/itemCardView"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="48dp">
+                <ImageView
+                    android:layout_width="48dp"
+                    android:id="@+id/imgCom"
+                    android:src="@drawable/usell"
+                    android:layout_height="48dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="100 MB"
+                    android:gravity="center_vertical"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#444"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:id="@+id/itemTitle"
+                    android:paddingRight="12dp"
+                    android:drawableEnd="@drawable/next_page"
+                    android:paddingLeft="12dp"
+                    android:layout_height="48dp"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="#444"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:maxLines="4"
+                android:ellipsize="end"
+                android:textColor="#444"
+                android:id="@+id/itemText"
+                android:textSize="18dp"
+                android:layout_margin="8dp"
+                android:text="adsfasdfasdf sadf  asdf as df as df sa df  asdfsfasdfasdf sadf  asdf as df as df sa df  asdfsfasdfasdf sadf  asdf as df as df sa df  asdfsfasdfasdf sadf  asdf as df as df sa df  asdfsfasdfasdf sadf  asdf as df as df sa df  asdfsfasdfasdf sadf  asdf as df as df sa df  asdf"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="end"
+                android:maxLines="1"
+                android:id="@+id/itemDate"
+                android:textSize="12dp"
+                android:text="21.04.2020"
+                android:paddingRight="12dp"
+                android:paddingBottom="8dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

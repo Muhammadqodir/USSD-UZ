@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Mobil USSD UZB</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="mapbox_access_token">pk.eyJ1IjoibXVoYW1tYWRxb2RpciIsImEiOiJjazNmMXdoZXgwMGFlM210NmVmODAwZ3dxIn0.zv6J57Cgk6YDEZTBGO-Jaw</string>
+    <string name="title_activity_map">Map</string>
+
+    <string name="notification">Уведомления</string>
+    <string name="nav_operatorga_qongiroq">Звонок оператору</string>
+    <string name="nav_darturchi_bilan_boglanish">Связатся с разработчиком</string>
+    <string name="nav_tilni_ozgartirish">Сменить язык</string>
+    <string name="nav_ulashish">Поделиться</string>
+    <string name="nav_baxolash">Оценить</string>
+    <string name="inter">Интернет пакеты</string>
+    <string name="tarif">Тарифные планы</string>
+    <string name="smstoplam">СМС Пакеты</string>
+    <string name="daqiqatoplamlar">Пакеты минут</string>
+    <string name="foydali">Полезное</string>
+    <string name="xizmatlar">Услуги</string>
+    <string name="balans">Баланс</string>
+    <string name="trafik">Трафик</string>
+    <string name="ucellslogan">Меняя жизнь к лучшему!</string>
+    <string name="beelineslogan">Лидерство, Надежность, Инновации!</string>
+    <string name="mobislogan">Навстречу цифровым возможностям!</string>
+    <string name="perfectslogan">Perfectum! Сегодня! Навсегда!</string>
+    <string name="uzmobileslogan">Мобильный оператор надёжной связи.</string>
+
+    <string name="yangiliklar">Новости</string>
+    <string name="dasturhaqida">О приложении</string>
+    <string name="batafsil">Подробнее</string>
+    <string name="activlashtirish">Активировать</string>
+    <string name="shartlar">Правила использования</string>
+
+</resources>
