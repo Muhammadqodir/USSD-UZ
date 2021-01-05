@@ -2,9 +2,14 @@ package uz.mq.mobilussduzb;
 
 import android.Manifest;
 import android.animation.ArgbEvaluator;
+import android.content.ActivityNotFoundException;
+import android.content.Intent;
+import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.graphics.drawable.ColorDrawable;
+import android.net.Uri;
 import android.os.Bundle;
+import android.os.StrictMode;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.MenuItem;
@@ -24,6 +29,7 @@ import androidx.appcompat.app.ActionBar;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
+import androidx.core.view.GravityCompat;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -36,13 +42,15 @@ import androidx.viewpager.widget.ViewPager;
 
 import org.json.JSONObject;
 
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity
+        implements NavigationView.OnNavigationItemSelectedListener{
 
     private AppBarConfiguration mAppBarConfiguration;
     FragmentPagerAdapter adapterViewPager;
@@ -130,6 +138,7 @@ public class MainActivity extends AppCompatActivity {
         selComTite = models.get(0).getTitle();
         selComID = 0;
         NavigationView navigationView = findViewById(R.id.nav_view);
+        navigationView.setNavigationItemSelectedListener(this);
         ViewPager vpPager = (ViewPager) findViewById(R.id.pager);
         adapterViewPager = new MyPagerAdapter(getSupportFragmentManager(), models);
         vpPager.setAdapter(adapterViewPager);
@@ -260,6 +269,97 @@ public class MainActivity extends AppCompatActivity {
             onRequestPermissionsResult(REQUEST_CODE_ASK_PERMISSIONS, REQUIRED_SDK_PERMISSIONS,
                     grantResults);
         }
+    }
+
+    @Override
+    public boolean onNavigationItemSelected(MenuItem item) {
+        // Handle navigation view item clicks here.
+
+        switch (item.getItemId()){
+//            case R.id.nav_info:
+//                Intent intent = new Intent(Intent.ACTION_SEND);
+//                intent.setType("text/html");
+//                intent.putExtra(Intent.EXTRA_EMAIL, "m.qodir777@gmail.com");
+//                intent.putExtra(Intent.EXTRA_SUBJECT, "USSD UZ");
+//                intent.putExtra(Intent.EXTRA_TEXT, "");
+//
+//                startActivity(Intent.createChooser(intent, "Send Email"));
+//
+//                break;
+            case R.id.nav_offerta:
+                startActivity(new Intent(MainActivity.this, OffertaActivity.class));
+
+                break;
+            case R.id.nav_tlg:
+                Intent intent_tlg = new Intent(Intent.ACTION_VIEW, Uri.parse("tg://resolve?domain=uzmobile_asadbek"));
+                startActivity(intent_tlg);
+
+                break;
+            case R.id.nav_inst:
+                Uri uri_inst = Uri.parse("https://www.instagram.com/uz_simkarta/");
+                Intent likeIng = new Intent(Intent.ACTION_VIEW, uri_inst);
+
+                likeIng.setPackage("com.instagram.android");
+
+                try {
+                    startActivity(likeIng);
+                } catch (ActivityNotFoundException e) {
+                    startActivity(new Intent(Intent.ACTION_VIEW,
+                            Uri.parse("https://www.instagram.com/uz_simkarta/")));
+                }
+
+                break;
+//            case R.id.nav_facebook:
+//
+//                try {
+//                    Intent intent_face = new Intent(Intent.ACTION_VIEW, Uri.parse("fb://profile/myussduz"));
+//                    startActivity(intent_face);
+//                } catch(Exception e) {
+//                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.facebook.com/myussduz")));
+//                }
+//
+//                break;
+            case R.id.nav_rate:
+                Uri uri = Uri.parse("market://details?id=" + getPackageName());
+                Intent goToMarket = new Intent(Intent.ACTION_VIEW, uri);
+                // To count with Play market backstack, After pressing back button,
+                // to taken back to our application, we need to add following flags to intent.
+                goToMarket.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY |
+                        Intent.FLAG_ACTIVITY_NEW_DOCUMENT |
+                        Intent.FLAG_ACTIVITY_MULTIPLE_TASK);
+                try {
+                    startActivity(goToMarket);
+                } catch (ActivityNotFoundException e) {
+                    startActivity(new Intent(Intent.ACTION_VIEW,
+                            Uri.parse("http://play.google.com/store/apps/details?id=" + getPackageName())));
+                }
+                break;
+//            case R.id.nav_setting:
+//                selectLang();
+//                break;
+            case R.id.nav_share:
+                try {
+                    StrictMode.VmPolicy.Builder builder = new StrictMode.VmPolicy.Builder();
+                    StrictMode.setVmPolicy(builder.build());
+
+                    PackageManager pm = getPackageManager();
+                    ApplicationInfo ai = pm.getApplicationInfo(getPackageName(), 0);
+                    File srcFile = new File(ai.publicSourceDir);
+                    Intent share = new Intent();
+                    share.setAction(Intent.ACTION_SEND);
+                    share.setType("application/vnd.android.package-archive");
+                    share.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(srcFile));
+                    startActivity(Intent.createChooser(share, "Ulashish"));
+                } catch (Exception e) {
+                    Log.e("ShareApp", e.getMessage());
+                }
+
+                break;
+
+        }
+
+        drawer.closeDrawer(GravityCompat.START);
+        return true;
     }
 
     @Override

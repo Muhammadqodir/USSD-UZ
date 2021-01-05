@@ -3,10 +3,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
-    <group android:checkableBehavior="single">
+    <group>
         <item
-            android:id="@+id/nav_home"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Уведомления" />
+            android:id="@+id/nav_telegram"
+            android:icon="@drawable/ic_icons8_ringer_volume"
+            android:title="@string/nav_operatorga_qongiroq" />
+        <item
+            android:id="@+id/nav_offerta"
+            android:icon="@drawable/ic_icons8_info"
+            android:title="@string/shartlar" />
+
     </group>
+
+    <item android:title="@string/dasturhaqida">
+        <menu>
+            <item
+                android:id="@+id/nav_tlg"
+                android:icon="@drawable/ic_icons8_telegram_app"
+                android:title="Telegram" />
+            <item
+                android:id="@+id/nav_inst"
+                android:icon="@drawable/ic_icons8_instagram"
+                android:title="Instagram" />
+<!--            <item-->
+<!--                android:id="@+id/nav_facebook"-->
+<!--                android:icon="@drawable/ic_icons8_facebook_old"-->
+<!--                android:title="FaceBook" />-->
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_icons8_share"
+                android:title="@string/nav_ulashish" />
+            <item
+                android:id="@+id/nav_rate"
+                android:icon="@drawable/ic_icons8_thumbs_up"
+                android:title="@string/nav_baxolash" />
+        </menu>
+    </item>
 </menu>

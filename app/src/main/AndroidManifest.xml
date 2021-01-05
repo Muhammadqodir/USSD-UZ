@@ -3,7 +3,8 @@
     package="uz.mq.mobilussduzb">
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -11,8 +12,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ViewActivity"></activity>
-        <activity android:name=".SelectDialog"
+        <activity android:name=".OffertaActivity"></activity>
+        <activity android:name=".ViewActivity" />
+        <activity
+            android:name=".SelectDialog"
             android:theme="@style/Theme.AppCompat.Light.Dialog" />
         <activity android:name=".ActivityViewMultiData" />
         <activity
