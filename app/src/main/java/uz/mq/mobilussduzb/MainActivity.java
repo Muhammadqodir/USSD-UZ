@@ -17,6 +17,7 @@ import android.view.View;
 import android.view.Menu;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.google.android.material.appbar.AppBarLayout;
@@ -101,6 +102,7 @@ public class MainActivity extends AppCompatActivity
     int selComColor;
     int selComID;
     ArrayList<DataModel> models;
+    LinearLayout llNavHeader;
     JSONObject subjJson;
     public void initViews(){
         drawer = findViewById(R.id.drawer_layout);
@@ -139,6 +141,8 @@ public class MainActivity extends AppCompatActivity
         selComID = 0;
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+        View headerLayout = navigationView.getHeaderView(0);
+        llNavHeader = (LinearLayout) headerLayout.findViewById(R.id.llHeaderNav);
         ViewPager vpPager = (ViewPager) findViewById(R.id.pager);
         adapterViewPager = new MyPagerAdapter(getSupportFragmentManager(), models);
         vpPager.setAdapter(adapterViewPager);
@@ -194,6 +198,7 @@ public class MainActivity extends AppCompatActivity
                 selComTite = models.get(position).getTitle();
 
                 selComID = position;
+                llNavHeader.setBackgroundColor(models.get(position).getColor());
             }
 
             @Override
