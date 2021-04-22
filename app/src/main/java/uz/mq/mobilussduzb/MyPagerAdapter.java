@@ -7,7 +7,7 @@ import androidx.fragment.app.FragmentPagerAdapter;
 import java.util.ArrayList;
 
 public class MyPagerAdapter extends FragmentPagerAdapter {
-    private static int NUM_ITEMS = 5;
+    private static int NUM_ITEMS = 4;
     ArrayList<DataModel> models;
     public MyPagerAdapter(FragmentManager fragmentManager, ArrayList<DataModel> models) {
         super(fragmentManager);
@@ -23,7 +23,11 @@ public class MyPagerAdapter extends FragmentPagerAdapter {
     // Returns the fragment to display for that page
     @Override
     public Fragment getItem(int position) {
-        return FirstFragment.newInstance(position, models.get(position));
+        if (position != 4){
+            return FirstFragment.newInstance(position, models.get(position));
+        }else {
+            return FirstFragment.newInstance(position, models.get(position-1));
+        }
     }
 
     // Returns the page title for the top indicator

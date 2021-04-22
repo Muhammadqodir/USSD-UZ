@@ -62,7 +62,7 @@
                             android:textColor="#fff"
                             android:id="@+id/comSlogan"
                             android:textSize="15dp"
-                            android:text="Talablarga mos aloqa operatori"
+                            android:text="Talablarga aloqa operatori"
                             android:layout_marginLeft="5dp"
                             android:textStyle="normal"/>
                     </LinearLayout>

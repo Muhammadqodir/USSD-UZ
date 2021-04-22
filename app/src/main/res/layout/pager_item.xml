@@ -32,7 +32,6 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:orientation="vertical"
-                    android:gravity="center_vertical"
                     android:layout_height="match_parent">
                     <TextView
                         android:layout_width="wrap_content"
@@ -41,7 +40,6 @@
                         android:id="@+id/comTitle"
                         android:textSize="20dp"
                         android:text="Uzmobile"
-                        android:layout_marginTop="-10dp"
                         android:layout_marginLeft="5dp"
                         android:textStyle="bold"/>
                     <TextView
@@ -49,6 +47,8 @@
                         android:layout_height="wrap_content"
                         android:textColor="#fff"
                         android:id="@+id/comSlogan"
+                        android:lines="1"
+                        android:ellipsize="end"
                         android:textSize="15dp"
                         android:text="Talablarga mos aloqa operatori"
                         android:layout_marginLeft="5dp"
