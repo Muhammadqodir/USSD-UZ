@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">Mobil USSD 2021</string>
+    <string name="uzmobile_code" translatable="false">*49350</string>
+    <string name="beeline_code" translatable="false">*4026</string>
+    <string name="mobiuz_code" translatable="false">*011500263</string>
+    <string name="ucell_code" translatable="false"></string>
     <string name="title_activity_main">MainActivity</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>

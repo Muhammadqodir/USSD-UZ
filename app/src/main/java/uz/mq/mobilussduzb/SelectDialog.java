@@ -28,8 +28,16 @@ public class SelectDialog extends AppCompatActivity {
         String cost = data.getStringExtra("cost");
         final String title = data.getStringExtra("title");
         String value = data.getStringExtra("value");
-        final String description = data.getStringExtra("description");
-        final String code = data.getStringExtra("code");
+        final String description = data.getStringExtra("description")
+                .replace("*beeline_code", getString(R.string.beeline_code))
+                .replace("*ucell_code", getString(R.string.ucell_code))
+                .replace("*uzmobile_code", getString(R.string.uzmobile_code))
+                .replace("*mobiuz_code", getString(R.string.mobiuz_code));
+        final String code = data.getStringExtra("code")
+                .replace("*beeline_code", getString(R.string.beeline_code))
+                .replace("*ucell_code", getString(R.string.ucell_code))
+                .replace("*uzmobile_code", getString(R.string.uzmobile_code))
+                .replace("*mobiuz_code", getString(R.string.mobiuz_code));;
 
         ((TextView) findViewById(R.id.tvDescription)).setText(description);
 
