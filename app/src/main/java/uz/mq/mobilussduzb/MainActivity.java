@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity
         setActionBar();
         initViews();
         checkPermissions();
-        currentVersion = "1.3";
+        currentVersion = "1.4";
         context = this;
         if (Utils.isOnline(context)){
             new GetVersionCode().execute();
