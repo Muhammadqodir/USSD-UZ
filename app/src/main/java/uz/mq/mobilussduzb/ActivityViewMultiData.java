@@ -15,6 +15,9 @@ import com.google.android.material.tabs.TabLayout;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
@@ -55,7 +58,7 @@ public class ActivityViewMultiData extends AppCompatActivity {
         }
 
 
-        TimeTableString = LoadData("baza.json");
+        TimeTableString = LoadData();
 
         lang = getSharedPreferences("lang", MODE_PRIVATE).getString("lang", "uz");
 
@@ -123,26 +126,49 @@ public class ActivityViewMultiData extends AppCompatActivity {
         tabLayout.setupWithViewPager(viewPager);
 
     }
-    public String LoadData(String inFile) {
-        String tContents = "";
+
+
+
+    public String LoadData() {
+        StringBuilder tContents = new StringBuilder();
 
         try {
-            InputStream stream = getAssets().open(inFile);
+            File rootPath = new File(ActivityViewMultiData.this.getExternalCacheDir(), "ussd");
+            if(!rootPath.exists()) {
+                rootPath.mkdirs();
+            }
 
-            int size = stream.available();
-            byte[] buffer = new byte[size];
-            stream.read(buffer);
-            stream.close();
-            tContents = new String(buffer);
+            final File localFile = new File(rootPath,"codes_db.json");
+            if (localFile.exists()){
+                try {
+                    BufferedReader br = new BufferedReader(new FileReader(localFile));
+                    String line;
+
+                    while ((line = br.readLine()) != null) {
+                        tContents.append(line);
+                        tContents.append('\n');
+                    }
+                    br.close();
+                }
+                catch (IOException e) {
+                    //You'll need to add proper error handling here
+                }
+            }else {
+                InputStream stream = getAssets().open("baza.json");
+
+                int size = stream.available();
+                byte[] buffer = new byte[size];
+                stream.read(buffer);
+                stream.close();
+                tContents.append(new String(buffer));
+            }
         } catch (IOException e) {
             // Handle exceptions here
         }
 
-        return tContents;
+        return tContents.toString();
 
     }
-
-
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

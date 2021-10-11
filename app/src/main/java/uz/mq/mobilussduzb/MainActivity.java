@@ -50,7 +50,9 @@ import androidx.viewpager.widget.ViewPager;
 import org.json.JSONObject;
 import org.jsoup.Jsoup;
 
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
@@ -82,13 +84,14 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        context = this;
         setActionBar();
         initViews();
         checkPermissions();
-        currentVersion = "1.4";
-        context = this;
+        currentVersion = "1.6";
         if (Utils.isOnline(context)){
             new GetVersionCode().execute();
+            DBManager.checkForNewVersion(this);
         }
     }
 
@@ -144,7 +147,7 @@ public class MainActivity extends AppCompatActivity
         };
 
 
-        final String TimeTableString = LoadData("baza.json");
+        final String TimeTableString = LoadData();
         try {
             subjJson = new JSONObject(TimeTableString);
         }catch (Exception e){
@@ -282,25 +285,57 @@ public class MainActivity extends AppCompatActivity
     }
 
 
-
-    public String LoadData(String inFile) {
-        String tContents = "";
+    public String LoadData() {
+        StringBuilder tContents = new StringBuilder();
 
         try {
-            InputStream stream = getAssets().open(inFile);
+            File rootPath = new File(context.getExternalCacheDir(), "ussd");
+            if(!rootPath.exists()) {
+                rootPath.mkdirs();
+            }
 
-            int size = stream.available();
-            byte[] buffer = new byte[size];
-            stream.read(buffer);
-            stream.close();
-            tContents = new String(buffer);
+            final File localFile = new File(rootPath,"codes_db.json");
+            if (localFile.exists()){
+                try {
+                    BufferedReader br = new BufferedReader(new FileReader(localFile));
+                    String line;
+
+                    while ((line = br.readLine()) != null) {
+                        tContents.append(line);
+                        tContents.append('\n');
+                    }
+                    br.close();
+                }
+                catch (IOException e) {
+                    checkPermissions();
+                    try {
+                        InputStream stream = getAssets().open("baza.json");
+
+                        int size = stream.available();
+                        byte[] buffer = new byte[size];
+                        stream.read(buffer);
+                        stream.close();
+                        tContents.append(new String(buffer));
+                    }catch (Exception e1){
+
+                    }
+                }
+            }else {
+                InputStream stream = getAssets().open("baza.json");
+
+                int size = stream.available();
+                byte[] buffer = new byte[size];
+                stream.read(buffer);
+                stream.close();
+                tContents.append(new String(buffer));
+            }
         } catch (IOException e) {
-            // Handle exceptions here
         }
 
-        return tContents;
+        return tContents.toString();
 
     }
+
     /**
      * Checks the dynamically-controlled permissions and requests missing permissions from end user.
      */

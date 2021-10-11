@@ -25,6 +25,9 @@ import android.widget.TextView;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
@@ -46,11 +49,12 @@ public class ViewActivity extends AppCompatActivity {
     String trgetType = "inter";
     ScrollView scrollView;
     LinearLayout.LayoutParams params;
+    Context context;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view);
-
+        context = this;
         comIcon = (ImageView) findViewById(R.id.comLogo);
         comSlogan = (TextView) findViewById(R.id.comSlogan);
         comTitle = (TextView) findViewById(R.id.comTitle);
@@ -88,7 +92,7 @@ public class ViewActivity extends AppCompatActivity {
 
         Collection<item_view> tweets = new ArrayList<>();
 
-        TimeTableString = LoadData("baza.json");
+        TimeTableString = LoadData();
 
 
         company = selectedSub.getIntExtra("com", 0);
@@ -140,22 +144,54 @@ public class ViewActivity extends AppCompatActivity {
 
     }
 
-    public String LoadData(String inFile) {
-        String tContents = "";
+
+    public String LoadData() {
+        StringBuilder tContents = new StringBuilder();
 
         try {
-            InputStream stream = getAssets().open(inFile);
+            File rootPath = new File(context.getExternalCacheDir(), "ussd");
+            if(!rootPath.exists()) {
+                rootPath.mkdirs();
+            }
 
-            int size = stream.available();
-            byte[] buffer = new byte[size];
-            stream.read(buffer);
-            stream.close();
-            tContents = new String(buffer);
+            final File localFile = new File(rootPath,"codes_db.json");
+            if (localFile.exists()){
+                try {
+                    BufferedReader br = new BufferedReader(new FileReader(localFile));
+                    String line;
+
+                    while ((line = br.readLine()) != null) {
+                        tContents.append(line);
+                        tContents.append('\n');
+                    }
+                    br.close();
+                }
+                catch (IOException e) {
+                    try {
+                        InputStream stream = getAssets().open("baza.json");
+
+                        int size = stream.available();
+                        byte[] buffer = new byte[size];
+                        stream.read(buffer);
+                        stream.close();
+                        tContents.append(new String(buffer));
+                    }catch (Exception e1){
+
+                    }
+                }
+            }else {
+                InputStream stream = getAssets().open("baza.json");
+
+                int size = stream.available();
+                byte[] buffer = new byte[size];
+                stream.read(buffer);
+                stream.close();
+                tContents.append(new String(buffer));
+            }
         } catch (IOException e) {
-            // Handle exceptions here
         }
 
-        return tContents;
+        return tContents.toString();
 
     }
 
