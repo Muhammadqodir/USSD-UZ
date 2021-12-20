@@ -28,6 +28,12 @@ import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.database.annotations.NotNull;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
@@ -88,10 +94,35 @@ public class MainActivity extends AppCompatActivity
         setActionBar();
         initViews();
         checkPermissions();
-        currentVersion = "1.6";
+        currentVersion = "1.7";
         if (Utils.isOnline(context)){
             new GetVersionCode().execute();
             DBManager.checkForNewVersion(this);
+            String[] offlineData = Utils.getCachedData(this);
+            FirebaseDatabase database = FirebaseDatabase.getInstance();
+            for (String data: offlineData){
+                if (data.equals("")){
+                    continue;
+                }
+                DatabaseReference clientStat = database.getReference("clients").child(getString(R.string.client_id)).child("stat").child(data);
+                clientStat.addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull @NotNull DataSnapshot snapshot) {
+                        if(snapshot.exists()){
+                            int val = (int) snapshot.getValue(Integer.class);
+                            val += 1;
+                            clientStat.setValue(val);
+                        }else{
+                            clientStat.setValue(1);
+                        }
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull @NotNull DatabaseError error) {
+                        Toast.makeText(MainActivity.this, error.getMessage(), Toast.LENGTH_SHORT).show();
+                    }
+                });
+            }
         }
     }
 

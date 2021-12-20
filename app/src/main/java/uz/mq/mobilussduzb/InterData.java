@@ -17,10 +17,14 @@ public class InterData extends BaseAdapter {
     Context ctx;
     LayoutInflater lInflater;
     ArrayList<DataItem> objects;
+    String targetType;
+    String comTitle;
 
-    InterData(Context context, ArrayList<DataItem> products) {
+    InterData(Context context, ArrayList<DataItem> products, String targetType, String comTitle) {
         ctx = context;
         objects = products;
+        this.targetType = targetType;
+        this.comTitle = comTitle;
         lInflater = (LayoutInflater) ctx
                 .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
@@ -71,6 +75,8 @@ public class InterData extends BaseAdapter {
                 diaog.putExtra("value", p.getTitle());
                 diaog.putExtra("description", p.getDescription());
                 diaog.putExtra("code", p.getCode());
+                diaog.putExtra("type", targetType);
+                diaog.putExtra("comTitle", comTitle);
 
                 ctx.startActivity(diaog);
 

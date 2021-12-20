@@ -17,10 +17,14 @@ public class TarifData extends BaseAdapter {
     Context ctx;
     LayoutInflater lInflater;
     ArrayList<DataItem> objects;
+    String targetType;
+    String comTitle;
 
-    TarifData(Context context, ArrayList<DataItem> products) {
+    TarifData(Context context, ArrayList<DataItem> products, String targetType, String comTitle) {
         ctx = context;
         objects = products;
+        this.targetType = targetType;
+        this.comTitle = comTitle;
         lInflater = (LayoutInflater) ctx
                 .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
@@ -75,6 +79,8 @@ public class TarifData extends BaseAdapter {
                 diaog.putExtra("value", p.getCost());
                 diaog.putExtra("description", p.getDescription());
                 diaog.putExtra("code", p.getCode());
+                diaog.putExtra("type", targetType);
+                diaog.putExtra("comTitle", comTitle);
 
                 ctx.startActivity(diaog);
 

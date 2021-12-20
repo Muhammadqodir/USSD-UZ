@@ -13,13 +13,17 @@ public class SubFragmentAdapter extends FragmentPagerAdapter {
     public static ArrayList<ArrayList<DataItem>> items;
     ArrayList<String> titles;
     public static Context context;
+    public String targetType;
+    public String comTitle;
 
-    public SubFragmentAdapter(FragmentManager fm, Context context, int count, ArrayList<ArrayList<DataItem>> items, ArrayList<String> titles) {
+    public SubFragmentAdapter(FragmentManager fm, Context context, int count, ArrayList<ArrayList<DataItem>> items, ArrayList<String> titles, String targettype, String comTitle) {
         super(fm);
         this.items = items;
         this.titles = titles;
         this.PAGE_COUNT = count;
         this.context = context;
+        this.targetType = targettype;
+        this.comTitle = comTitle;
     }
 
     @Override
@@ -29,7 +33,7 @@ public class SubFragmentAdapter extends FragmentPagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-        return SubFragment.newInstance(position);
+        return SubFragment.newInstance(position, targetType, comTitle);
     }
 
     @Override

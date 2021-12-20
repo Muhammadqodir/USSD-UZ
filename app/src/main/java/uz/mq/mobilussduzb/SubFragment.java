@@ -18,10 +18,14 @@ public class SubFragment  extends Fragment {
     private int mPage;
     Context context;
     ArrayList<DataItem> items;
+    String targetType;
+    String comTitle;
 
-    public static SubFragment newInstance(int page) {
+    public static SubFragment newInstance(int page, String targetType, String comTitle) {
         Bundle args = new Bundle();
         args.putInt(ARG_PAGE, page);
+        args.putString("targetType", targetType);
+        args.putString("comTitle", comTitle);
         SubFragment fragment = new SubFragment();
         fragment.setArguments(args);
 
@@ -33,6 +37,8 @@ public class SubFragment  extends Fragment {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
             mPage = getArguments().getInt(ARG_PAGE);
+            targetType = getArguments().getString("targetType");
+            comTitle = getArguments().getString("comTitle");
         }
     }
 
@@ -44,7 +50,7 @@ public class SubFragment  extends Fragment {
         ArrayList<DataItem> item = SubFragmentAdapter.items.get(mPage);
 
 
-        InterData adapter = new InterData(SubFragmentAdapter.context, item);
+        InterData adapter = new InterData(SubFragmentAdapter.context, item, targetType, comTitle);
 
         listView.setAdapter(adapter);
         return view;

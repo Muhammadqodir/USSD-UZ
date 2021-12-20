@@ -18,10 +18,14 @@ public class SubFragmentTarif extends Fragment {
     private int mPage;
     Context context;
     ArrayList<DataItem> items;
+    String targetType;
+    String comTitle;
 
-    public static SubFragmentTarif newInstance(int page) {
+    public static SubFragmentTarif newInstance(int page, String targetType, String comTitle) {
         Bundle args = new Bundle();
         args.putInt(ARG_PAGE, page);
+        args.putString("targetType", targetType);
+        args.putString("comTitle", comTitle);
         SubFragmentTarif fragment = new SubFragmentTarif();
         fragment.setArguments(args);
 
@@ -33,6 +37,8 @@ public class SubFragmentTarif extends Fragment {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
             mPage = getArguments().getInt(ARG_PAGE);
+            targetType = getArguments().getString("targetType");
+            comTitle = getArguments().getString("comTitle");
         }
     }
 
@@ -44,7 +50,7 @@ public class SubFragmentTarif extends Fragment {
         ArrayList<DataItem> item = SubFragmentAdapterTarif.items.get(mPage);
 
 
-        TarifData adapter = new TarifData(SubFragmentAdapterTarif.context, item);
+        TarifData adapter = new TarifData(SubFragmentAdapterTarif.context, item, targetType, comTitle);
 
         listView.setAdapter(adapter);
         return view;

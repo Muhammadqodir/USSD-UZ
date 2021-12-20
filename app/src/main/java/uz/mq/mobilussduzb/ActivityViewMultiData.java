@@ -34,6 +34,7 @@ public class ActivityViewMultiData extends AppCompatActivity {
     String lang = "ru";
     int company;
     String trgetType = "inter";
+    String selComTitle = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,6 +52,7 @@ public class ActivityViewMultiData extends AppCompatActivity {
 
         int color = selectedSub.getIntExtra("comColor", 0);
         int drawable = selectedSub.getIntExtra("targetIcon", 0);
+        selComTitle = selectedSub.getStringExtra("comTitle");
 
         actionBar.setBackgroundDrawable(new ColorDrawable(color));
         if (Utils.getSDKVersion() >= 21){
@@ -115,9 +117,9 @@ public class ActivityViewMultiData extends AppCompatActivity {
         viewPager = findViewById(R.id.viewpager);
 
         if (trgetType.equals("tarif") || trgetType.equals("service")){
-            viewPager.setAdapter(new SubFragmentAdapterTarif(getSupportFragmentManager(), ActivityViewMultiData.this, count, items, titles));
+            viewPager.setAdapter(new SubFragmentAdapterTarif(getSupportFragmentManager(), ActivityViewMultiData.this, count, items, titles, trgetType, selComTitle));
         }else {
-            viewPager.setAdapter(new SubFragmentAdapter(getSupportFragmentManager(), ActivityViewMultiData.this, count, items, titles));
+            viewPager.setAdapter(new SubFragmentAdapter(getSupportFragmentManager(), ActivityViewMultiData.this, count, items, titles, trgetType, selComTitle));
         }
 
 

@@ -1,6 +1,7 @@
 package uz.mq.mobilussduzb;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 
@@ -19,6 +20,23 @@ public class Utils {
         }
         else{
             return false;
+        }
+    }
+
+    public static String[] getCachedData(Context context){
+        SharedPreferences preferences = context.getSharedPreferences("Cache", Context.MODE_PRIVATE);
+        String cache = preferences.getString("offlineData", "");
+        preferences.edit().putString("offlineData", "").apply();
+        return cache.split(";");
+    }
+
+    public static void addCachedData(Context context, String key){
+        SharedPreferences preferences = context.getSharedPreferences("Cache", Context.MODE_PRIVATE);
+        String cache = preferences.getString("offlineData", "");
+        if (cache.equals("")){
+            preferences.edit().putString("offlineData", key).apply();
+        }else{
+            preferences.edit().putString("offlineData", cache+";"+key).apply();
         }
     }
 }
