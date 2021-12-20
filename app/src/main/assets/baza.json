@@ -79,24 +79,24 @@
                 "ammout": "250 MB",
                 "title": "Haftalik 250 MB",
                 "summa": "5 000 so'm",
-                "description": "To'plam narxi: 5 000 so'm\nBerilgan trafik: 250 MB\nAmal qilish muddati: 7 kun\nFaollashtirish: *110#",
-                "code": "*110#",
+                "description": "To'plam narxi: 5 000 so'm\nBerilgan trafik: 250 MB\nAmal qilish muddati: 7 kun\nFaollashtirish: *1#",
+                "code": "*1#",
                 "muddat": "7 kun"
               },
               {
                 "ammout": "500 MB ",
                 "title": "Haftalik 500 MB",
                 "summa": "8 000 so'm",
-                "description": "To'plam narxi: 8 000 so'm\nBerilgan trafik: 500 MB \nAmal qilish muddati: 7 kun\nFaollashtirish: *110#",
-                "code": "*110#",
+                "description": "To'plam narxi: 8 000 so'm\nBerilgan trafik: 500 MB \nAmal qilish muddati: 7 kun\nFaollashtirish: *1#",
+                "code": "*1#",
                 "muddat": "7 kun"
               },
               {
                 "ammout": "1000 MB ",
                 "title": "Haftalik 1000 MB",
                 "summa": "10 000 so'm",
-                "description": "To'plam narxi: 10 000 so'm\nBerilgan trafik: 1000 MB \nAmal qilish muddati: 7 kun\nFaollashtirish: *110#",
-                "code": "*110#",
+                "description": "To'plam narxi: 10 000 so'm\nBerilgan trafik: 1000 MB \nAmal qilish muddati: 7 kun\nFaollashtirish: *1#",
+                "code": "*1#",
                 "muddat": "7 kun"
               }
             ]
@@ -1440,6 +1440,53 @@
           }
         ],
         "tarif": [
+          {
+            "name": "Milliy",
+            "data": [
+              {
+                "title": "Milliy 10",
+                "summa": "10 000 so'm\r",
+                "description": "10 000 so'm\n10 daqiqa\n10 MB\n10 SMS\n\nAbonent to'lovi oyiga 10 000 so'm\r\n10 daqiqa\r\n10 MB Mobil internet\n10 SMS\nLimitdan rashqari 1 MB/1 SMS/1 daqiqa narxi 10 so'm\r\n\r\nTarif o'zgartirish: *111*1*11*1#",
+                "code": "*111*1*11*1#"
+              },
+              {
+                "title": "Milliy 15",
+                "summa": "15 000 so'm\r",
+                "description": "15 000 so'm\n100 daqiqa\n500 MB\n500 SMS\n\nAbonent to'lovi oyiga 15 000 so'm\r\n100 daqiqa\r\n500 MB Mobil internet\n500 SMS\nLimitdan rashqari 1 MB/1 SMS/1 daqiqa narxi 5 so'm\r\n\r\nTarif o'zgartirish: *111*1*11*2#",
+                "code": "*111*1*11*2#"
+              },
+              {
+                "title": "Milliy 40",
+                "summa": "40 000 so'm\r",
+                "description": "40 000 so'm\nUNLIM daqiqa\n8 GB\n3 000 SMS\n\nAbonent to'lovi oyiga 40 000 so'm\r\nUNLIM daqiqa\r\n8 GB Mobil internet\n3 000 SMS\r\n\r\nTarif o'zgartirish: *111*1*11*3#",
+                "code": "*111*1*11*3#"
+              },
+              {
+                "title": "Milliy 50",
+                "summa": "50 000 so'm\r",
+                "description": "50 000 so'm\nUNLIM daqiqa\n12 GB\n5 000 SMS\n\nAbonent to'lovi oyiga 50 000 so'm\r\nUNLIM daqiqa\r\n12 GB Mobil internet\n5 000 SMS\r\n\r\nTarif o'zgartirish: *111*1*11*4#",
+                "code": "*111*1*11*4#"
+              },
+              {
+                "title": "Milliy 70",
+                "summa": "70 000 so'm\r",
+                "description": "70 000 so'm\nUNLIM daqiqa\n20 GB\n5 000 SMS\n\nAbonent to'lovi oyiga 70 000 so'm\r\nUNLIM daqiqa\r\n20 GB Mobil internet\n5 000 SMS\r\n\r\nTarif o'zgartirish: *111*1*11*5#",
+                "code": "*111*1*11*5#"
+              },
+              {
+                "title": "Milliy 100",
+                "summa": "100 000 so'm\r",
+                "description": "100 000 so'm\nUNLIM daqiqa\n35 GB\n5 000 SMS\n\nAbonent to'lovi oyiga 100 000 so'm\r\nUNLIM daqiqa\r\n35 GB Mobil internet\n5 000 SMS\r\n\r\nTarif o'zgartirish: *111*1*11*6#",
+                "code": "*111*1*11*6#"
+              },
+              {
+                "title": "Milliy VIP",
+                "summa": "150 000 so'm\r",
+                "description": "150 000 so'm\nUNLIM daqiqa\nUNLIM GB\n5 000 SMS\n\nAbonent to'lovi oyiga 150 000 so'm\r\nUNLIM daqiqa\r\nUNLIM Mobil internet\n5 000 SMS\r\n\r\nTarif o'zgartirish: *111*1*11*7#",
+                "code": "*111*1*11*7#"
+              }
+            ]
+          },
           {
             "name": "Faol tariflar",
             "data": [
@@ -3003,110 +3050,110 @@
         "inter": [
           {
             "name": "Oylik to'plamlar",
-            "info": "Oylik Internet to‘plamlari tavsifi:  Xizmat faqat Oldindan to‘lov (Prepaid) abonentlari uchun amal qiladi; Abonent to‘lovi har 30 kunda yechiladi; Oylik to‘plam avtomatik tarzda belgilanish funksiyasi bilan belgilanadi. Avtomatik tarzda belgilanishni *588*555*3*10*1# raqamiga so‘rov jo‘natib, o‘chirish mumkin. Xizmat yoqilganidan keyin 30 kun o‘tib, abonent hisobida yetarli mablag‘ bo‘lsa, tizim oldin xarid qilingan to‘plamni yangidan belgilaydi. Bu holda avval xarid qilingan to‘plamdan qolgan trafik yangi to‘plam trafigiga qo‘shiladi.* Yangi Internet-to‘plami trafigi xizmat ulanganidan va avtomatik tarzda yoqilgandan so‘ng 31-kuni 00:00 da belgilanadi. Ortiqcha harajatlarning oldini olish maqsadida, yangi Internet-to‘plamdan foydalanishdan avval, trafik qoldig‘ini tekshirish zarur. Xizmatni faollashtirish uchun so‘rov yuborilgandan so‘ng, xizmat muvaffaqiyatli faollashtirilganligi haqida SMS xabarni kuting, yoki *107# raqami orqali tekshiring; Agar internet-to‘plam avtomatik belgilanishi paytida abonent raqami hisobida yetarlicha mablag‘ bo‘lmasa, to‘plam belgilanmaydi, trafik qoldig‘i esa joriy internet-to‘plam muddatining so‘ngigacha saqlanib qoladi. Xizmatni oyning istalgan kunida bekor qilish, qaytadan ulash mumkin; Avtomatik tarzda belgilanish funksiyasi ochirilib, ulangan kundan boshlab 30 kundan so‘ng, trafikning qolgan miqdori nolga tenglashtiriladi. Intenet to‘plamga qayta ulanganda, agar avvalgi to‘plam amal qilish muddati tugamagan bo‘lsa, yangi to‘plamga berilgan trafikka avvalgi to‘plamdan ishlatilmagan trafik miqdori qo‘shib beriladi. To‘plamning amal qilish muddati so‘nggi yoqilgan to‘plam muddatidan kelib chiqib belgilanadi. Shuningdek, avtomatik tarzda belgilash jarayoni ham so‘nggi yoqilgan to‘plam shartlariga muvofiq amalga oshiriladi. To‘plamda berilgan GBlardan faqat \"Faol\" holatda foydalanish mumkin. Agar to‘plamni xarid qilish paytida internetdan foydalanayotgan bo‘lsangiz, xizmatning to‘g‘ri taqdim etilishi uchun internet-sessiyani to‘xtatib, qaytadan ulanishingiz tavsiya etiladi va shundan keyin Internetda ishlashni yana davom ettirishingiz mumkin. Haqi oldindan to‘lanuvchi xizmat ko‘rsatish (Prepaid) tizimi abonentlari uchun internet to’plam doirasida internet hisobda GB bo‘lganda tariflanadigan ma’lumotning kvotasi – 1 KB Abonentlar diqqatiga! Xizmat muvaffaqiyatli belgilanganligi haqidagi SMS-xabar qabul qilinganidan so‘ng, xizmat faollashadi. Agarda Siz SMS-xabar qabul qilmagan bo‘lsangiz, Sizga trafik belgilanganligini tekshirish uchun  *107# raqamiga USSD-so‘rov yuborishni tavsiya etamiz. Agar trafik belgilanmagam bo‘lsa, Internet narxi Sizning tarifingizga ko‘ra baholanadi. Bu hollarda Kompaniya taqdim etilgan xizmatlar bo‘yicha qayta hisob-kitobni amalga oshirmaydi.",
+            "info": "Oylik Internet to‘plamlari tavsifi:  Xizmat faqat Oldindan to‘lov (Prepaid) abonentlari uchun amal qiladi; Abonent to‘lovi har 30 kunda yechiladi; Oylik to‘plam avtomatik tarzda belgilanish funksiyasi bilan belgilanadi. Avtomatik tarzda belgilanishni *558*555*3*10*1# raqamiga so‘rov jo‘natib, o‘chirish mumkin. Xizmat yoqilganidan keyin 30 kun o‘tib, abonent hisobida yetarli mablag‘ bo‘lsa, tizim oldin xarid qilingan to‘plamni yangidan belgilaydi. Bu holda avval xarid qilingan to‘plamdan qolgan trafik yangi to‘plam trafigiga qo‘shiladi.* Yangi Internet-to‘plami trafigi xizmat ulanganidan va avtomatik tarzda yoqilgandan so‘ng 31-kuni 00:00 da belgilanadi. Ortiqcha harajatlarning oldini olish maqsadida, yangi Internet-to‘plamdan foydalanishdan avval, trafik qoldig‘ini tekshirish zarur. Xizmatni faollashtirish uchun so‘rov yuborilgandan so‘ng, xizmat muvaffaqiyatli faollashtirilganligi haqida SMS xabarni kuting, yoki *107# raqami orqali tekshiring; Agar internet-to‘plam avtomatik belgilanishi paytida abonent raqami hisobida yetarlicha mablag‘ bo‘lmasa, to‘plam belgilanmaydi, trafik qoldig‘i esa joriy internet-to‘plam muddatining so‘ngigacha saqlanib qoladi. Xizmatni oyning istalgan kunida bekor qilish, qaytadan ulash mumkin; Avtomatik tarzda belgilanish funksiyasi ochirilib, ulangan kundan boshlab 30 kundan so‘ng, trafikning qolgan miqdori nolga tenglashtiriladi. Intenet to‘plamga qayta ulanganda, agar avvalgi to‘plam amal qilish muddati tugamagan bo‘lsa, yangi to‘plamga berilgan trafikka avvalgi to‘plamdan ishlatilmagan trafik miqdori qo‘shib beriladi. To‘plamning amal qilish muddati so‘nggi yoqilgan to‘plam muddatidan kelib chiqib belgilanadi. Shuningdek, avtomatik tarzda belgilash jarayoni ham so‘nggi yoqilgan to‘plam shartlariga muvofiq amalga oshiriladi. To‘plamda berilgan GBlardan faqat \"Faol\" holatda foydalanish mumkin. Agar to‘plamni xarid qilish paytida internetdan foydalanayotgan bo‘lsangiz, xizmatning to‘g‘ri taqdim etilishi uchun internet-sessiyani to‘xtatib, qaytadan ulanishingiz tavsiya etiladi va shundan keyin Internetda ishlashni yana davom ettirishingiz mumkin. Haqi oldindan to‘lanuvchi xizmat ko‘rsatish (Prepaid) tizimi abonentlari uchun internet to’plam doirasida internet hisobda GB bo‘lganda tariflanadigan ma’lumotning kvotasi – 1 KB Abonentlar diqqatiga! Xizmat muvaffaqiyatli belgilanganligi haqidagi SMS-xabar qabul qilinganidan so‘ng, xizmat faollashadi. Agarda Siz SMS-xabar qabul qilmagan bo‘lsangiz, Sizga trafik belgilanganligini tekshirish uchun  *107# raqamiga USSD-so‘rov yuborishni tavsiya etamiz. Agar trafik belgilanmagam bo‘lsa, Internet narxi Sizning tarifingizga ko‘ra baholanadi. Bu hollarda Kompaniya taqdim etilgan xizmatlar bo‘yicha qayta hisob-kitobni amalga oshirmaydi.",
             "data": [
               {
                 "ammout": "1 GB",
                 "title": "To‘plam 1",
                 "summa": "8 900 so'm",
-                "description": "To'plam narxi: 8 900 so'm\nBerilgan trafik: 1 GB\nAmal qilish muddati: 31 kun\nFaollashtirish: *588*555*3*1*ucell_code#",
-                "code": "*588*555*3*1*ucell_code#",
+                "description": "To'plam narxi: 8 900 so'm\nBerilgan trafik: 1 GB\nAmal qilish muddati: 31 kun\nFaollashtirish: *558*1*1*ucell_code#",
+                "code": "*558*1*1*ucell_code#",
                 "muddat": "31 kun"
               },
               {
                 "ammout": "1.5 GB",
                 "title": "To‘plam 1.5",
                 "summa": "13 000 so'm",
-                "description": "To'plam narxi: 13 000 so'm\nBerilgan trafik: 1.5 GB\nAmal qilish muddati: 31 kun\nFaollashtirish:   *588*555*3*2*ucell_code#",
-                "code": "*588*555*3*2*ucell_code#",
+                "description": "To'plam narxi: 13 000 so'm\nBerilgan trafik: 1.5 GB\nAmal qilish muddati: 31 kun\nFaollashtirish:   *558*1*2*ucell_code#",
+                "code": "*558*1*2*ucell_code#",
                 "muddat": "31 kun"
               },
               {
                 "ammout": "2 GB",
                 "title": "Тo'plam 2",
                 "summa": "15 000 so'm",
-                "description": "To'plam narxi: 15 000 so'm\nBerilgan trafik: 2 GB\nAmal qilish muddati: 31 kun\nFaollashtirish:  *588*555*3*3*ucell_code#",
-                "code": "*588*555*3*3*ucell_code#",
+                "description": "To'plam narxi: 15 000 so'm\nBerilgan trafik: 2 GB\nAmal qilish muddati: 31 kun\nFaollashtirish:  *558*1*3*ucell_code#",
+                "code": "*558*1*3*ucell_code#",
                 "muddat": "31 kun"
               },
               {
-                "ammout": "2 GB",
-                "title": "Тo'plam 2",
+                "ammout": "4 GB",
+                "title": "Тo'plam 4",
                 "summa": "25 000 so'm",
-                "description": "To'plam narxi: 25 000 so'm\nBerilgan trafik: 2 GB\nAmal qilish muddati: 31 kun\nFaollashtirish:  *588*555*3*4*ucell_code#",
-                "code": "*588*555*3*4*ucell_code#",
+                "description": "To'plam narxi: 25 000 so'm\nBerilgan trafik: 2 GB\nAmal qilish muddati: 31 kun\nFaollashtirish:  *558*1*4*ucell_code#",
+                "code": "*558*1*4*ucell_code#",
                 "muddat": "31 kun"
               },
               {
                 "ammout": "7 GB",
                 "title": "Тo'plam 7",
                 "summa": "35 000 so'm",
-                "description": "To'plam narxi: 35 000 so'm\nBerilgan trafik: 7 GB\nAmal qilish muddati: 31 kun\nFaollashtirish:  *588*555*3*5*ucell_code#",
-                "code": "*588*555*3*5*ucell_code#",
+                "description": "To'plam narxi: 35 000 so'm\nBerilgan trafik: 7 GB\nAmal qilish muddati: 31 kun\nFaollashtirish:  *558*1*5*ucell_code#",
+                "code": "*558*1*5*ucell_code#",
                 "muddat": "31 kun"
               },
               {
                 "ammout": "10 GB",
                 "title": "Тo'plam 10",
                 "summa": "45 000 so'm",
-                "description": "To'plam narxi: 45 000 so'm\nBerilgan trafik: 10 GB\nAmal qilish muddati: 31 kun\nFaollashtirish:  *588*555*3*5*ucell_code#",
-                "code": "*588*555*3*5*ucell_code#",
+                "description": "To'plam narxi: 45 000 so'm\nBerilgan trafik: 10 GB\nAmal qilish muddati: 31 kun\nFaollashtirish:  *558*1*13*ucell_code#",
+                "code": "*558*1*13*ucell_code#",
                 "muddat": "31 kun"
               },
               {
                 "ammout": "13 GB",
                 "title": "Тo'plam 13",
                 "summa": "55 000 so'm",
-                "description": "To'plam narxi: 55 000 so'm\nBerilgan trafik: 13 GB\nAmal qilish muddati: 31 kun\nFaollashtirish:  *588*555*3*6*ucell_code#",
-                "code": "*588*555*3*6*ucell_code#",
+                "description": "To'plam narxi: 55 000 so'm\nBerilgan trafik: 13 GB\nAmal qilish muddati: 31 kun\nFaollashtirish:  *558*1*6*ucell_code#",
+                "code": "*558*1*6*ucell_code#",
                 "muddat": "31 kun"
               },
               {
                 "ammout": "20 GB",
                 "title": "Тo'plam 20",
                 "summa": "65 000 so'm",
-                "description": "To'plam narxi: 65 000 so'm\nBerilgan trafik: 20 GB\nAmal qilish muddati: 31 kun\nFaollashtirish: *588*555*3*7*ucell_code#",
-                "code": "*588*555*3*7*ucell_code#",
+                "description": "To'plam narxi: 65 000 so'm\nBerilgan trafik: 20 GB\nAmal qilish muddati: 31 kun\nFaollashtirish: *558*1*7*ucell_code#",
+                "code": "*558*1*7*ucell_code#",
                 "muddat": "31 kun"
               },
               {
                 "ammout": "30 GB",
                 "title": "Тo'plam 30",
                 "summa": "75 000 so'm",
-                "description": "To'plam narxi: 75 000 so'm\nBerilgan trafik: 30 GB\nAmal qilish muddati: 31 kun\nFaollashtirish:  *588*555*3*8*ucell_code#",
-                "code": "*588*555*3*8*ucell_code#",
+                "description": "To'plam narxi: 75 000 so'm\nBerilgan trafik: 30 GB\nAmal qilish muddati: 31 kun\nFaollashtirish:  *558*1*8*ucell_code#",
+                "code": "*558*1*8*ucell_code#",
                 "muddat": "31 kun"
               },
               {
                 "ammout": "50 GB",
                 "title": "Тo'plam 50",
                 "summa": "85 000 so'm",
-                "description": "To'plam narxi: 85 000 so'm\nBerilgan trafik: 50 GB\nAmal qilish muddati: 31 kun\nFaollashtirish:  *588*555*3*9*ucell_code#",
-                "code": "*588*555*3*9*ucell_code#",
+                "description": "To'plam narxi: 85 000 so'm\nBerilgan trafik: 50 GB\nAmal qilish muddati: 31 kun\nFaollashtirish:  *558*1*9*ucell_code#",
+                "code": "*558*1*9*ucell_code#",
                 "muddat": "31 kun"
               },
               {
                 "ammout": "80 GB",
                 "title": "Тo'plam 80",
                 "summa": "115 000 so'm",
-                "description": "To'plam narxi: 115 000 so'm\nBerilgan trafik: 80 GB\nAmal qilish muddati: 31 kun\nFaollashtirish:  *588*555*3*11*ucell_code#",
-                "code": "*588*555*3*11*ucell_code#",
+                "description": "To'plam narxi: 115 000 so'm\nBerilgan trafik: 80 GB\nAmal qilish muddati: 31 kun\nFaollashtirish:  *558*1*10*ucell_code#",
+                "code": "*558*1*10*ucell_code#",
                 "muddat": "31 kun"
               },
               {
                 "ammout": "90 GB",
                 "title": "Тo'plam 90",
                 "summa": "135 000 so'm",
-                "description": "To'plam narxi: 135 000 so'm\nBerilgan trafik: 90 GB\nAmal qilish muddati: 31 kun\nFaollashtirish:  *588*555*3*12*ucell_code#",
-                "code": "*588*555*3*12*ucell_code#",
+                "description": "To'plam narxi: 135 000 so'm\nBerilgan trafik: 90 GB\nAmal qilish muddati: 31 kun\nFaollashtirish:  *558*1*11*ucell_code#",
+                "code": "*558*1*11*ucell_code#",
                 "muddat": "31 kun"
               },
               {
                 "ammout": "135 GB",
                 "title": "Тo'plam 135",
                 "summa": "188 000 so'm",
-                "description": "To'plam narxi: 188 000 so'm\nBerilgan trafik: 135 GB\nAmal qilish muddati: 31 kun\nFaollashtirish:  *588*555*3*13*ucell_code#",
-                "code": "*588*555*3*13*ucell_code#",
+                "description": "To'plam narxi: 188 000 so'm\nBerilgan trafik: 135 GB\nAmal qilish muddati: 31 kun\nFaollashtirish:  *558*1*12*ucell_code#",
+                "code": "*558*1*12*ucell_code#",
                 "muddat": "31 kun"
               }
             ]
@@ -4794,24 +4841,24 @@
                 "ammout": "250 МБ",
                 "title": "Недельный 250 МБ",
                 "summa": "5 000 сум",
-                "description": "Стоимость пакета: 5 000 сум\nОбъем трафика: 250 MB\nСрок действия: 7 дней\nАктивация: *110#",
-                "code": "*110#",
+                "description": "Стоимость пакета: 5 000 сум\nОбъем трафика: 250 MB\nСрок действия: 7 дней\nАктивация: *1#",
+                "code": "*1#",
                 "muddat": "7 дней"
               },
               {
                 "ammout": "500 МБ ",
                 "title": "Недельный 500 МБ",
                 "summa": "8 000 сум",
-                "description": "Стоимость пакета: 8 000 сум\nОбъем трафика: 500 MB \nСрок действия: 7 дней\nАктивация: *110#",
-                "code": "*110#",
+                "description": "Стоимость пакета: 8 000 сум\nОбъем трафика: 500 MB \nСрок действия: 7 дней\nАктивация: *1#",
+                "code": "*1#",
                 "muddat": "7 дней"
               },
               {
                 "ammout": "1000 МБ ",
                 "title": "Недельный 1000 МБ",
                 "summa": "10 000 сум",
-                "description": "Стоимость пакета: 10 000 сум\nОбъем трафика: 1000 MB \nСрок действия: 7 дней\nАктивация: *110#",
-                "code": "*110#",
+                "description": "Стоимость пакета: 10 000 сум\nОбъем трафика: 1000 MB \nСрок действия: 7 дней\nАктивация: *1#",
+                "code": "*1#",
                 "muddat": "7 дней"
               }
             ]
@@ -6155,6 +6202,53 @@
           }
         ],
         "tarif": [
+          {
+            "name": "Milliy",
+            "data": [
+              {
+                "title": "Milliy 10",
+                "summa": "10 000 сум\r",
+                "description": "10 000 сум\n10 минут\n10 MB\n10 SMS\n\nАбонентская плата 10 000 сум\r\n10 минут\r\n10 MB Мобил интернет\n10 SMS\nВне лимита 1 MB/1 SMS/1 минут цена 10 сум\r\n\r\nАктивировать тариф: *111*1*11*1#",
+                "code": "*111*1*11*1#"
+              },
+              {
+                "title": "Milliy 15",
+                "summa": "15 000 сум\r",
+                "description": "15 000 сум\n100 минут\n500 MB\n500 SMS\n\nАбонентская плата 15 000 сум\r\n100 минут\r\n500 MB Мобил интернет\n500 SMS\nВне лимита 1 MB/1 SMS/1 минут цена 5 сум\r\n\r\nАктивировать тариф: *111*1*11*2#",
+                "code": "*111*1*11*2#"
+              },
+              {
+                "title": "Milliy 40",
+                "summa": "40 000 сум\r",
+                "description": "40 000 сум\nUNLIM минут\n8 GB\n3 000 SMS\n\nАбонентская плата 40 000 сум\r\nUNLIM минут\r\n8 GB Мобил интернет\n3 000 SMS\r\n\r\nАктивировать тариф: *111*1*11*3#",
+                "code": "*111*1*11*3#"
+              },
+              {
+                "title": "Milliy 50",
+                "summa": "50 000 сум\r",
+                "description": "50 000 сум\nUNLIM минут\n12 GB\n5 000 SMS\n\nАбонентская плата 50 000 сум\r\nUNLIM минут\r\n12 GB Мобил интернет\n5 000 SMS\r\n\r\nАктивировать тариф: *111*1*11*4#",
+                "code": "*111*1*11*4#"
+              },
+              {
+                "title": "Milliy 70",
+                "summa": "70 000 сум\r",
+                "description": "70 000 сум\nUNLIM минут\n20 GB\n5 000 SMS\n\nАбонентская плата 70 000 сум\r\nUNLIM минут\r\n20 GB Мобил интернет\n5 000 SMS\r\n\r\nАктивировать тариф: *111*1*11*5#",
+                "code": "*111*1*11*5#"
+              },
+              {
+                "title": "Milliy 100",
+                "summa": "100 000 сум\r",
+                "description": "100 000 сум\nUNLIM минут\n35 GB\n5 000 SMS\n\nАбонентская плата 100 000 сум\r\nUNLIM минут\r\n35 GB Мобил интернет\n5 000 SMS\r\n\r\nАктивировать тариф: *111*1*11*6#",
+                "code": "*111*1*11*6#"
+              },
+              {
+                "title": "Milliy VIP",
+                "summa": "150 000 сум\r",
+                "description": "150 000 сум\nUNLIM минут\nUNLIM GB\n5 000 SMS\n\nАбонентская плата 150 000 сум\r\nUNLIM минут\r\nUNLIM Мобил интернет\n5 000 SMS\r\n\r\nАктивировать тариф: *111*1*11*7#",
+                "code": "*111*1*11*7#"
+              }
+            ]
+          },
           {
             "name": "Активные тарифы",
             "data": [
@@ -7724,104 +7818,104 @@
                 "ammout": "1 GB",
                 "title": "Пакет 1",
                 "summa": "8 900 сум",
-                "description": "Стоимость пакета: 8 900 сум\nТрафик: 1 GB\nСрок действия: 31 дней\nАктивировать: *588*555*3*1*ucell_code#",
-                "code": "*588*555*3*1*ucell_code#",
+                "description": "Стоимость пакета: 8 900 сум\nТрафик: 1 GB\nСрок действия: 31 дней\nАктивировать: *558*1*1*ucell_code#",
+                "code": "*558*1*1*ucell_code#",
                 "muddat": "31 дней"
               },
               {
                 "ammout": "1.5 GB",
                 "title": "Пакет 1.5",
                 "summa": "13 000 сум",
-                "description": "Стоимость пакета: 13 000 сум\nТрафик: 1.5 GB\nСрок действия: 31 дней\nАктивировать:   *588*555*3*2*ucell_code#",
-                "code": "*588*555*3*2*ucell_code#",
+                "description": "Стоимость пакета: 13 000 сум\nТрафик: 1.5 GB\nСрок действия: 31 дней\nАктивировать:   *558*1*2*ucell_code#",
+                "code": "*558*1*2*ucell_code#",
                 "muddat": "31 дней"
               },
               {
                 "ammout": "2 GB",
                 "title": "Тo'plam 2",
                 "summa": "15 000 сум",
-                "description": "Стоимость пакета: 15 000 сум\nТрафик: 2 GB\nСрок действия: 31 дней\nАктивировать:  *588*555*3*3*ucell_code#",
-                "code": "*588*555*3*3*ucell_code#",
+                "description": "Стоимость пакета: 15 000 сум\nТрафик: 2 GB\nСрок действия: 31 дней\nАктивировать:  *558*1*3*ucell_code#",
+                "code": "*558*1*3*ucell_code#",
                 "muddat": "31 дней"
               },
               {
                 "ammout": "2 GB",
                 "title": "Тo'plam 2",
                 "summa": "25 000 сум",
-                "description": "Стоимость пакета: 25 000 сум\nТрафик: 2 GB\nСрок действия: 31 дней\nАктивировать:  *588*555*3*4*ucell_code#",
-                "code": "*588*555*3*4*ucell_code#",
+                "description": "Стоимость пакета: 25 000 сум\nТрафик: 2 GB\nСрок действия: 31 дней\nАктивировать:  *558*1*4*ucell_code#",
+                "code": "*558*1*4*ucell_code#",
                 "muddat": "31 дней"
               },
               {
                 "ammout": "7 GB",
                 "title": "Тo'plam 7",
                 "summa": "35 000 сум",
-                "description": "Стоимость пакета: 35 000 сум\nТрафик: 7 GB\nСрок действия: 31 дней\nАктивировать:  *588*555*3*5*ucell_code#",
-                "code": "*588*555*3*5*ucell_code#",
+                "description": "Стоимость пакета: 35 000 сум\nТрафик: 7 GB\nСрок действия: 31 дней\nАктивировать:  *558*1*5*ucell_code#",
+                "code": "*558*1*5*ucell_code#",
                 "muddat": "31 дней"
               },
               {
                 "ammout": "10 GB",
                 "title": "Тo'plam 10",
                 "summa": "45 000 сум",
-                "description": "Стоимость пакета: 45 000 сум\nТрафик: 10 GB\nСрок действия: 31 дней\nАктивировать:  *588*555*3*5*ucell_code#",
-                "code": "*588*555*3*5*ucell_code#",
+                "description": "Стоимость пакета: 45 000 сум\nТрафик: 10 GB\nСрок действия: 31 дней\nАктивировать:  *558*1*5*ucell_code#",
+                "code": "*558*1*5*ucell_code#",
                 "muddat": "31 дней"
               },
               {
                 "ammout": "13 GB",
                 "title": "Тo'plam 13",
                 "summa": "55 000 сум",
-                "description": "Стоимость пакета: 55 000 сум\nТрафик: 13 GB\nСрок действия: 31 дней\nАктивировать:  *588*555*3*6*ucell_code#",
-                "code": "*588*555*3*6*ucell_code#",
+                "description": "Стоимость пакета: 55 000 сум\nТрафик: 13 GB\nСрок действия: 31 дней\nАктивировать:  *558*1*6*ucell_code#",
+                "code": "*558*1*6*ucell_code#",
                 "muddat": "31 дней"
               },
               {
                 "ammout": "20 GB",
                 "title": "Тo'plam 20",
                 "summa": "65 000 сум",
-                "description": "Стоимость пакета: 65 000 сум\nТрафик: 20 GB\nСрок действия: 31 дней\nАктивировать: *588*555*3*7*ucell_code#",
-                "code": "*588*555*3*7*ucell_code#",
+                "description": "Стоимость пакета: 65 000 сум\nТрафик: 20 GB\nСрок действия: 31 дней\nАктивировать: *558*1*7*ucell_code#",
+                "code": "*558*1*7*ucell_code#",
                 "muddat": "31 дней"
               },
               {
                 "ammout": "30 GB",
                 "title": "Тo'plam 30",
                 "summa": "75 000 сум",
-                "description": "Стоимость пакета: 75 000 сум\nТрафик: 30 GB\nСрок действия: 31 дней\nАктивировать:  *588*555*3*8*ucell_code#",
-                "code": "*588*555*3*8*ucell_code#",
+                "description": "Стоимость пакета: 75 000 сум\nТрафик: 30 GB\nСрок действия: 31 дней\nАктивировать:  *558*1*8*ucell_code#",
+                "code": "*558*1*8*ucell_code#",
                 "muddat": "31 дней"
               },
               {
                 "ammout": "50 GB",
                 "title": "Тo'plam 50",
                 "summa": "85 000 сум",
-                "description": "Стоимость пакета: 85 000 сум\nТрафик: 50 GB\nСрок действия: 31 дней\nАктивировать:  *588*555*3*9*ucell_code#",
-                "code": "*588*555*3*9*ucell_code#",
+                "description": "Стоимость пакета: 85 000 сум\nТрафик: 50 GB\nСрок действия: 31 дней\nАктивировать:  *558*1*9*ucell_code#",
+                "code": "*558*1*9*ucell_code#",
                 "muddat": "31 дней"
               },
               {
                 "ammout": "80 GB",
                 "title": "Тo'plam 80",
                 "summa": "115 000 сум",
-                "description": "Стоимость пакета: 115 000 сум\nТрафик: 80 GB\nСрок действия: 31 дней\nАктивировать:  *588*555*3*11*ucell_code#",
-                "code": "*588*555*3*11*ucell_code#",
+                "description": "Стоимость пакета: 115 000 сум\nТрафик: 80 GB\nСрок действия: 31 дней\nАктивировать:  *558*1*10*ucell_code#",
+                "code": "*558*1*10*ucell_code#",
                 "muddat": "31 дней"
               },
               {
                 "ammout": "90 GB",
                 "title": "Тo'plam 90",
                 "summa": "135 000 сум",
-                "description": "Стоимость пакета: 135 000 сум\nТрафик: 90 GB\nСрок действия: 31 дней\nАктивировать:  *588*555*3*12*ucell_code#",
-                "code": "*588*555*3*12*ucell_code#",
+                "description": "Стоимость пакета: 135 000 сум\nТрафик: 90 GB\nСрок действия: 31 дней\nАктивировать:  *558*1*11*ucell_code#",
+                "code": "*558*1*11*ucell_code#",
                 "muddat": "31 дней"
               },
               {
                 "ammout": "135 GB",
                 "title": "Тo'plam 135",
                 "summa": "188 000 сум",
-                "description": "Стоимость пакета: 188 000 сум\nТрафик: 135 GB\nСрок действия: 31 дней\nАктивировать:  *588*555*3*13*ucell_code#",
-                "code": "*588*555*3*13*ucell_code#",
+                "description": "Стоимость пакета: 188 000 сум\nТрафик: 135 GB\nСрок действия: 31 дней\nАктивировать:  *558*1*12*ucell_code#",
+                "code": "*558*1*12*ucell_code#",
                 "muddat": "31 дней"
               }
             ]
@@ -9510,24 +9604,24 @@
                 "ammout": "250 MB",
                 "title": "Ҳафталик 250 МБ",
                 "summa": "5 000 сўм",
-                "description": "Топлам нархи: 5 000 сўм\nБерилгпн трафик: 250 MB\nАмал қилиш муддати: 7 кун\nФаоллаштириш: *110#",
-                "code": "*110#",
+                "description": "Топлам нархи: 5 000 сўм\nБерилгпн трафик: 250 MB\nАмал қилиш муддати: 7 кун\nФаоллаштириш: *1#",
+                "code": "*1#",
                 "muddat": "7 кун"
               },
               {
                 "ammout": "500 MB ",
                 "title": "Ҳафталик 500 МБ",
                 "summa": "8 000 сўм",
-                "description": "Топлам нархи: 8 000 сўм\nБерилгпн трафик: 500 MB \nАмал қилиш муддати: 7 кун\nФаоллаштириш: *110#",
-                "code": "*110#",
+                "description": "Топлам нархи: 8 000 сўм\nБерилгпн трафик: 500 MB \nАмал қилиш муддати: 7 кун\nФаоллаштириш: *1#",
+                "code": "*1#",
                 "muddat": "7 кун"
               },
               {
                 "ammout": "1000 MB ",
                 "title": "Ҳафталик 1000 МБ",
                 "summa": "10 000 сўм",
-                "description": "Топлам нархи: 10 000 сўм\nБерилгпн трафик: 1000 MB \nАмал қилиш муддати: 7 кун\nФаоллаштириш: *110#",
-                "code": "*110#",
+                "description": "Топлам нархи: 10 000 сўм\nБерилгпн трафик: 1000 MB \nАмал қилиш муддати: 7 кун\nФаоллаштириш: *1#",
+                "code": "*1#",
                 "muddat": "7 кун"
               }
             ]
@@ -10871,6 +10965,53 @@
           }
         ],
         "tarif": [
+          {
+            "name": "Milliy",
+            "data": [
+              {
+                "title": "Milliy 10",
+                "summa": "10 000 сум\r",
+                "description": "10 000 сум\n10 дакака\n10 MB\n10 SMS\n\nАбонент толови ойига 10 000 сум\r\n10 дакака\r\n10 MB Мобил интернет\n10 SMS\nЛимитдан ташкари 1 MB/1 SMS/1 дакака narxi 10 сум\r\n\r\nТариф узгартириш: *111*1*11*1#",
+                "code": "*111*1*11*1#"
+              },
+              {
+                "title": "Milliy 15",
+                "summa": "15 000 сум\r",
+                "description": "15 000 сум\n100 дакака\n500 MB\n500 SMS\n\nАбонент толови ойига 15 000 сум\r\n100 дакака\r\n500 MB Мобил интернет\n500 SMS\nЛимитдан ташкари 1 MB/1 SMS/1 дакака narxi 5 сум\r\n\r\nТариф узгартириш: *111*1*11*2#",
+                "code": "*111*1*11*2#"
+              },
+              {
+                "title": "Milliy 40",
+                "summa": "40 000 сум\r",
+                "description": "40 000 сум\nUNLIM дакака\n8 GB\n3 000 SMS\n\nАбонент толови ойига 40 000 сум\r\nUNLIM дакака\r\n8 GB Мобил интернет\n3 000 SMS\r\n\r\nТариф узгартириш: *111*1*11*3#",
+                "code": "*111*1*11*3#"
+              },
+              {
+                "title": "Milliy 50",
+                "summa": "50 000 сум\r",
+                "description": "50 000 сум\nUNLIM дакака\n12 GB\n5 000 SMS\n\nАбонент толови ойига 50 000 сум\r\nUNLIM дакака\r\n12 GB Мобил интернет\n5 000 SMS\r\n\r\nТариф узгартириш: *111*1*11*4#",
+                "code": "*111*1*11*4#"
+              },
+              {
+                "title": "Milliy 70",
+                "summa": "70 000 сум\r",
+                "description": "70 000 сум\nUNLIM дакака\n20 GB\n5 000 SMS\n\nАбонент толови ойига 70 000 сум\r\nUNLIM дакака\r\n20 GB Мобил интернет\n5 000 SMS\r\n\r\nТариф узгартириш: *111*1*11*5#",
+                "code": "*111*1*11*5#"
+              },
+              {
+                "title": "Milliy 100",
+                "summa": "100 000 сум\r",
+                "description": "100 000 сум\nUNLIM дакака\n35 GB\n5 000 SMS\n\nАбонент толови ойига 100 000 сум\r\nUNLIM дакака\r\n35 GB Мобил интернет\n5 000 SMS\r\n\r\nТариф узгартириш: *111*1*11*6#",
+                "code": "*111*1*11*6#"
+              },
+              {
+                "title": "Milliy VIP",
+                "summa": "150 000 сум\r",
+                "description": "150 000 сум\nUNLIM дакака\nUNLIM GB\n5 000 SMS\n\nАбонент толови ойига 150 000 сум\r\nUNLIM дакака\r\nUNLIM Мобил интернет\n5 000 SMS\r\n\r\nТариф узгартириш: *111*1*11*7#",
+                "code": "*111*1*11*7#"
+              }
+            ]
+          },
           {
             "name": "Фаол тарифлар",
             "data": [
@@ -12440,104 +12581,104 @@
                 "ammout": "1 GB",
                 "title": "Тўплам 1",
                 "summa": "8 900 сўм",
-                "description": "Тўплам нархи: 8 900 сўм\nБерилган трафик: 1 GB\nАмал килиш муддати: 31 кун\nФаоллаштириш: *588*555*3*1*ucell_code#",
-                "code": "*588*555*3*1*ucell_code#",
+                "description": "Тўплам нархи: 8 900 сўм\nБерилган трафик: 1 GB\nАмал килиш муддати: 31 кун\nФаоллаштириш: *558*1*1*ucell_code#",
+                "code": "*558*1*1*ucell_code#",
                 "muddat": "31 кун"
               },
               {
                 "ammout": "1.5 GB",
                 "title": "Тўплам 1.5",
                 "summa": "13 000 сўм",
-                "description": "Тўплам нархи: 13 000 сўм\nБерилган трафик: 1.5 GB\nАмал килиш муддати: 31 кун\nФаоллаштириш:   *588*555*3*2*ucell_code#",
-                "code": "*588*555*3*2*ucell_code#",
+                "description": "Тўплам нархи: 13 000 сўм\nБерилган трафик: 1.5 GB\nАмал килиш муддати: 31 кун\nФаоллаштириш:   *558*1*2*ucell_code#",
+                "code": "*558*1*2*ucell_code#",
                 "muddat": "31 кун"
               },
               {
                 "ammout": "2 GB",
                 "title": "Тo'plam 2",
                 "summa": "15 000 сўм",
-                "description": "Тўплам нархи: 15 000 сўм\nБерилган трафик: 2 GB\nАмал килиш муддати: 31 кун\nФаоллаштириш:  *588*555*3*3*ucell_code#",
-                "code": "*588*555*3*3*ucell_code#",
+                "description": "Тўплам нархи: 15 000 сўм\nБерилган трафик: 2 GB\nАмал килиш муддати: 31 кун\nФаоллаштириш:  *558*1*3*ucell_code#",
+                "code": "*558*1*3*ucell_code#",
                 "muddat": "31 кун"
               },
               {
                 "ammout": "2 GB",
                 "title": "Тo'plam 2",
                 "summa": "25 000 сўм",
-                "description": "Тўплам нархи: 25 000 сўм\nБерилган трафик: 2 GB\nАмал килиш муддати: 31 кун\nФаоллаштириш:  *588*555*3*4*ucell_code#",
-                "code": "*588*555*3*4*ucell_code#",
+                "description": "Тўплам нархи: 25 000 сўм\nБерилган трафик: 2 GB\nАмал килиш муддати: 31 кун\nФаоллаштириш:  *558*1*4*ucell_code#",
+                "code": "*558*1*4*ucell_code#",
                 "muddat": "31 кун"
               },
               {
                 "ammout": "7 GB",
                 "title": "Тo'plam 7",
                 "summa": "35 000 сўм",
-                "description": "Тўплам нархи: 35 000 сўм\nБерилган трафик: 7 GB\nАмал килиш муддати: 31 кун\nФаоллаштириш:  *588*555*3*5*ucell_code#",
-                "code": "*588*555*3*5*ucell_code#",
+                "description": "Тўплам нархи: 35 000 сўм\nБерилган трафик: 7 GB\nАмал килиш муддати: 31 кун\nФаоллаштириш:  *558*1*5*ucell_code#",
+                "code": "*558*1*5*ucell_code#",
                 "muddat": "31 кун"
               },
               {
                 "ammout": "10 GB",
                 "title": "Тo'plam 10",
                 "summa": "45 000 сўм",
-                "description": "Тўплам нархи: 45 000 сўм\nБерилган трафик: 10 GB\nАмал килиш муддати: 31 кун\nФаоллаштириш:  *588*555*3*5*ucell_code#",
-                "code": "*588*555*3*5*ucell_code#",
+                "description": "Тўплам нархи: 45 000 сўм\nБерилган трафик: 10 GB\nАмал килиш муддати: 31 кун\nФаоллаштириш:  *558*1*5*ucell_code#",
+                "code": "*558*1*5*ucell_code#",
                 "muddat": "31 кун"
               },
               {
                 "ammout": "13 GB",
                 "title": "Тo'plam 13",
                 "summa": "55 000 сўм",
-                "description": "Тўплам нархи: 55 000 сўм\nБерилган трафик: 13 GB\nАмал килиш муддати: 31 кун\nФаоллаштириш:  *588*555*3*6*ucell_code#",
-                "code": "*588*555*3*6*ucell_code#",
+                "description": "Тўплам нархи: 55 000 сўм\nБерилган трафик: 13 GB\nАмал килиш муддати: 31 кун\nФаоллаштириш:  *558*1*6*ucell_code#",
+                "code": "*558*1*6*ucell_code#",
                 "muddat": "31 кун"
               },
               {
                 "ammout": "20 GB",
                 "title": "Тo'plam 20",
                 "summa": "65 000 сўм",
-                "description": "Тўплам нархи: 65 000 сўм\nБерилган трафик: 20 GB\nАмал килиш муддати: 31 кун\nФаоллаштириш: *588*555*3*7*ucell_code#",
-                "code": "*588*555*3*7*ucell_code#",
+                "description": "Тўплам нархи: 65 000 сўм\nБерилган трафик: 20 GB\nАмал килиш муддати: 31 кун\nФаоллаштириш: *558*1*7*ucell_code#",
+                "code": "*558*1*7*ucell_code#",
                 "muddat": "31 кун"
               },
               {
                 "ammout": "30 GB",
                 "title": "Тo'plam 30",
                 "summa": "75 000 сўм",
-                "description": "Тўплам нархи: 75 000 сўм\nБерилган трафик: 30 GB\nАмал килиш муддати: 31 кун\nФаоллаштириш:  *588*555*3*8*ucell_code#",
-                "code": "*588*555*3*8*ucell_code#",
+                "description": "Тўплам нархи: 75 000 сўм\nБерилган трафик: 30 GB\nАмал килиш муддати: 31 кун\nФаоллаштириш:  *558*1*8*ucell_code#",
+                "code": "*558*1*8*ucell_code#",
                 "muddat": "31 кун"
               },
               {
                 "ammout": "50 GB",
                 "title": "Тo'plam 50",
                 "summa": "85 000 сўм",
-                "description": "Тўплам нархи: 85 000 сўм\nБерилган трафик: 50 GB\nАмал килиш муддати: 31 кун\nФаоллаштириш:  *588*555*3*9*ucell_code#",
-                "code": "*588*555*3*9*ucell_code#",
+                "description": "Тўплам нархи: 85 000 сўм\nБерилган трафик: 50 GB\nАмал килиш муддати: 31 кун\nФаоллаштириш:  *558*1*9*ucell_code#",
+                "code": "*558*1*9*ucell_code#",
                 "muddat": "31 кун"
               },
               {
                 "ammout": "80 GB",
                 "title": "Тo'plam 80",
                 "summa": "115 000 сўм",
-                "description": "Тўплам нархи: 115 000 сўм\nБерилган трафик: 80 GB\nАмал килиш муддати: 31 кун\nФаоллаштириш:  *588*555*3*11*ucell_code#",
-                "code": "*588*555*3*11*ucell_code#",
+                "description": "Тўплам нархи: 115 000 сўм\nБерилган трафик: 80 GB\nАмал килиш муддати: 31 кун\nФаоллаштириш:  *558*1*10*ucell_code#",
+                "code": "*558*1*10*ucell_code#",
                 "muddat": "31 кун"
               },
               {
                 "ammout": "90 GB",
                 "title": "Тo'plam 90",
                 "summa": "135 000 сўм",
-                "description": "Тўплам нархи: 135 000 сўм\nБерилган трафик: 90 GB\nАмал килиш муддати: 31 кун\nФаоллаштириш:  *588*555*3*12*ucell_code#",
-                "code": "*588*555*3*12*ucell_code#",
+                "description": "Тўплам нархи: 135 000 сўм\nБерилган трафик: 90 GB\nАмал килиш муддати: 31 кун\nФаоллаштириш:  *558*1*11*ucell_code#",
+                "code": "*558*1*11*ucell_code#",
                 "muddat": "31 кун"
               },
               {
                 "ammout": "135 GB",
                 "title": "Тo'plam 135",
                 "summa": "188 000 сўм",
-                "description": "Тўплам нархи: 188 000 сўм\nБерилган трафик: 135 GB\nАмал килиш муддати: 31 кун\nФаоллаштириш:  *588*555*3*13*ucell_code#",
-                "code": "*588*555*3*13*ucell_code#",
+                "description": "Тўплам нархи: 188 000 сўм\nБерилган трафик: 135 GB\nАмал килиш муддати: 31 кун\nФаоллаштириш:  *558*1*12*ucell_code#",
+                "code": "*558*1*12*ucell_code#",
                 "muddat": "31 кун"
               }
             ]

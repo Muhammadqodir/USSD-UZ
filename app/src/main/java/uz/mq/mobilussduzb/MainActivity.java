@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity
     Integer[] colors;
 
     private final static int REQUEST_CODE_ASK_PERMISSIONS = 1;
-    private static final String[] REQUIRED_SDK_PERMISSIONS = new String[] {Manifest.permission.CALL_PHONE};
+    private static final String[] REQUIRED_SDK_PERMISSIONS = new String[] {Manifest.permission.CALL_PHONE, Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.WRITE_EXTERNAL_STORAGE};
     Context context;
     AppBarLayout appBarLayout;
     @Override
@@ -94,7 +94,7 @@ public class MainActivity extends AppCompatActivity
         setActionBar();
         initViews();
         checkPermissions();
-        currentVersion = "1.7";
+        currentVersion = "1.8";
         if (Utils.isOnline(context)){
             new GetVersionCode().execute();
             DBManager.checkForNewVersion(this);
