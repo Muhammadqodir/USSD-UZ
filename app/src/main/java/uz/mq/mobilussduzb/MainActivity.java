@@ -94,7 +94,7 @@ public class MainActivity extends AppCompatActivity
         setActionBar();
         initViews();
         checkPermissions();
-        currentVersion = "1.8";
+        currentVersion = "1.9";
         if (Utils.isOnline(context)){
             new GetVersionCode().execute();
             DBManager.checkForNewVersion(this);
